@@ -1,5 +1,5 @@
-from .configs_llada_dsa import ModelConfig
-from .model_dsa import LLaDAModel
+from configs_llada_dsa import ModelConfig
+from model_dsa import LLaDAModel
 import torch
 
 def test_dsa():

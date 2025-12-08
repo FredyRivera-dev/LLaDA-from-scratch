@@ -14,7 +14,7 @@ from typing import (
     Tuple,
     cast,
 )
-from .configs_llada_dsa import (
+from configs_llada_dsa import (
     LLaDAConfig,
     StrEnum,
     InitFnType,
@@ -35,6 +35,12 @@ from transformers.cache_utils import Cache
 from functools import partial
 from dataclasses import fields
 from typing import List, Optional, Tuple, Union
+if sys.version_info.minor > 8:
+    from collections.abc import MutableMapping
+elif sys.version_info.minor == 8:
+    from typing import MutableMapping
+else:
+    raise SystemExit("This script supports Python 3.8 or higher")
 
 __all__ = [
     "LayerNormBase",
