@@ -6,7 +6,7 @@ to do training tests without having to download the entire 166GB dataset
 from huggingface_hub import hf_hub_download
 from pathlib import Path
 
-def dw_dataset(repo_id: str = "Fredtt3/LLaDA-Sample-10BT", files_count: int = 10, path_to_dataset: str = "data_train"):
+def dw_dataset(repo_id: str = "FredyRivera-dev/LLaDA-Sample-10BT", files_count: int = 10, path_to_dataset: str = "data_train"):
     repo_type = "dataset"
     out_dir   = Path(path_to_dataset)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -27,5 +27,5 @@ def dw_dataset(repo_id: str = "Fredtt3/LLaDA-Sample-10BT", files_count: int = 10
 if __name__ == "__main__":
     en = dw_dataset(files_count=2, path_to_dataset="data_train_en")
     print(en)
-    #dw_dataset(repo_id="Fredtt3/LLaDA-Sample-ES", files_count=5, path_to_dataset="data_train_es")
+    #dw_dataset(repo_id="FredyRivera-dev/LLaDA-Sample-ES", files_count=5, path_to_dataset="data_train_es")
     print("Done")
