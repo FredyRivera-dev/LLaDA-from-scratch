@@ -35,7 +35,7 @@ The main objective of this project is to:
 ## 💾 Dataset
 The dataset we will use for training will be [HuggingFaceFW/fineweb](https://huggingface.co/datasets/HuggingFaceFW/fineweb) in the `sample-10BT` subset
 
-- **Processed version:** [Fredtt3/LLaDA-Sample-10BT](https://huggingface.co/datasets/Fredtt3/LLaDA-Sample-10BT)  
+- **Processed version:** [FredyRivera-dev/LLaDA-Sample-10BT](https://huggingface.co/datasets/FredyRivera-dev/LLaDA-Sample-10BT)  
   - Sharded into 252 `.pt` files  
   - ~2,520,000 chunks of up to 4,096 tokens (1% random-length)  
   - Noisy masking (ε=1×10⁻³)  
